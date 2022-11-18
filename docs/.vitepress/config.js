@@ -1,11 +1,5 @@
-/**
- * File: config.js
- * Created by busyhe on 2022/6/23 22:44.
- * Email: busyhe@qq.com
- * Description:
- */
 export default {
-    base: '/vitepress-example/',
+    base: '/',
     title: 'vitepress-example',
     appearance: true,
     lastUpdated: true,
@@ -23,7 +17,7 @@ export default {
         ],
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2019-present busyhe <busyhe@qq.com>'
+            copyright: 'Copyright © 2019-present Nofated'
         }
     }
 }
