@@ -6,18 +6,12 @@
     "scripts": {
         "dev": "vitepress dev docs",
         "build": "vitepress build docs",
-        "serve": "vitepress serve docs",
-        "postinstall": "husky install",
-        "prepack": "pinst --disable",
-        "postpack": "pinst --enable"
+        "serve": "vitepress serve docs"
     },
     "license": "MIT",
     "devDependencies": {
-        "vitepress": "^1.0.0-alpha.4",
+        "vitepress": "^1.0.0-alpha.29",
         "vue": "^3.2.37"
-    },
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx,vue}": "eslint --fix"
     },
     "engines": {
         "node": ">=16.0.0"
