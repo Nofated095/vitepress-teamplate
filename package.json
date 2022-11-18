@@ -1,47 +1,20 @@
 {
     "name": "vitepress-example",
     "description": "A VitePress Demo Project",
-    "author": "busyhe <busyhe@qq.com>",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "docs:dev": "vitepress dev docs",
-        "docs:build": "vitepress build docs",
-        "docs:serve": "vitepress serve docs",
+        "dev": "vitepress dev docs",
+        "build": "vitepress build docs",
+        "serve": "vitepress serve docs",
         "postinstall": "husky install",
         "prepack": "pinst --disable",
         "postpack": "pinst --enable"
     },
     "license": "MIT",
-    "keywords": [],
-    "workspaces": [
-        "packages/*"
-    ],
-    "packageManager": "yarn@3.2.1",
     "devDependencies": {
-        "@semantic-release/changelog": "^6.0.1",
-        "@semantic-release/git": "^10.0.1",
-        "commitizen": "^4.2.4",
-        "cz-conventional-changelog": "^3.3.0",
-        "husky": "^8.0.1",
-        "lint-staged": "^12.4.1",
-        "pinst": "^3.0.0",
-        "semantic-release": "^19.0.2",
         "vitepress": "^1.0.0-alpha.4",
         "vue": "^3.2.37"
-    },
-    "homepage": "https://busyhe.github.io/vitepress-example/",
-    "bugs": {
-        "url": "https://github.com/busyhe/vitepress-example/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:busyhe/vitepress-example.git"
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,vue}": "eslint --fix"
