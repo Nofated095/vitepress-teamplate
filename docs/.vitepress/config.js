@@ -17,7 +17,7 @@ export default {
               items: [
                 { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
                 { text: 'Getting Started', link: '/guide/getting-started' }
-            ]
+            ]]
         },
         editLink: {
             pattern: 'https://github.com/wfe-templates/vitepress/edit/main/docs/:path',
