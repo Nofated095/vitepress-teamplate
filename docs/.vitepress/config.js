@@ -34,13 +34,3 @@ export default {
         }
     }
 }
-
-function nav() {
-    return [
-        
-    ]
-}
-
-function sidebarGuide() {
-    return
-}
