@@ -4,7 +4,11 @@ export default {
     appearance: true,
     lastUpdated: true,
     themeConfig: {
-        nav: nav(),
+        nav: [
+            { text: 'Guide', link: '/guide/getting-started', activeMatch: '/guide/' },
+            { text: 'Configs', link: '/config/introduction', activeMatch: '/config/' },
+            { text: 'Changelog', link: 'https://github.com/wfe-templates/vitepress/releases' }
+        ],
         sidebar: {
             '/guide/': sidebarGuide()
         },
@@ -24,12 +28,7 @@ export default {
 
 function nav() {
     return [
-        { text: 'Guide', link: '/guide/getting-started', activeMatch: '/guide/' },
-        { text: 'Configs', link: '/config/introduction', activeMatch: '/config/' },
-        {
-            text: 'Changelog',
-            link: 'https://github.com/wfe-templates/vitepress/releases'
-        }
+        
     ]
 }
 
