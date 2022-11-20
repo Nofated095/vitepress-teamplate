@@ -10,7 +10,14 @@ export default {
             { text: 'Changelog', link: 'https://github.com/wfe-templates/vitepress/releases' }
         ],
         sidebar: {
-            '/guide/': sidebarGuide()
+            '/guide/':  [
+            {
+              text: 'Introduction',
+              collapsible: true,
+              items: [
+                { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
+                { text: 'Getting Started', link: '/guide/getting-started' }
+            ]
         },
         editLink: {
             pattern: 'https://github.com/wfe-templates/vitepress/edit/main/docs/:path',
@@ -33,14 +40,5 @@ function nav() {
 }
 
 function sidebarGuide() {
-    return [
-        {
-            text: 'Introduction',
-            collapsible: true,
-            items: [
-                { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
-                { text: 'Getting Started', link: '/guide/getting-started' }
-            ]
-        }
-    ]
+    return
 }
